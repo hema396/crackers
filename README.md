@@ -19,14 +19,7 @@
       align-items: center;
       justify-content: flex-start;
       min-height: 100vh;
-    }
-
-    .logo {
-      width: 200px;
-      margin-top: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px #ffdd00;
-    }
+  }
 
     h1 {
       font-size: 2.2em;
@@ -86,8 +79,7 @@
       margin-top: 30px;
       background: rgba(0,0,0,0.5);
       padding: 5px 10px;
-      border-radius: 8px;
-    }
+      bord
   </style>
 </head>
 <body>
