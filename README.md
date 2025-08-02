@@ -1,5 +1,4 @@
 <a href="https://www.funwithcrackers.com/"><h1>PHOENIX CRACKERS</h1></a>
-<img src="c:\Users\HP\Downloads\phoenix.com.jpg"
 <!DOCTYPE html>
 <html lang="en">
 <head>
