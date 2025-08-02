@@ -1,4 +1,4 @@
-<a href="https://www.funwithcrackers.com/"><h1>PHOENIX CRACKERS</h1></a>
+<a href="https://www.funwithcrackers.com/"><h1> PHOENIX CRACKERS </h1></a>
 <img src="https://github.com/hema396/crackers/blob/main/phoenix.com.jpg?raw=true">
 <html lang="en">
 <head>
@@ -79,7 +79,7 @@
       margin-top: 30px;
       background: rgba(0,0,0,0.5);
       padding: 5px 10px;
-      bord
+      bord }
   </style>
 </head>
 <body>
@@ -88,9 +88,6 @@
   <a href="https://www.funwithcrackers.com/">
     <h1>PHOENIX CRACKERS</h1>
   </a>
-
-  <!-- Logo Image (use a real URL here) -->
-  <img class="logo" src="https://via.placeholder.com/200x100.png?text=Phoenix+Logo" alt="Phoenix Logo" />
 
   <!-- 🎇 Offer Text -->
   <h1>🎉 Aadi Mega Offer - Hurry Up! 🎇</h1>
