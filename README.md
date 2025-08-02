@@ -1,5 +1,4 @@
 <a href="https://www.funwithcrackers.com/"><h1>PHOENIX CRACKERS</h1></a>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -117,7 +116,7 @@
     const todayNoon = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 0, 0);
 
     let deadline = (now > todayNoon)
-      ? new Date(todayNoon.getTime() + 24 * 60 * 60 * 1000) // tomorrow 12PM
+      ? new Date(todayNoon.getTime() + 24 * 60 * 60 * 1000) // tomorrow 12am
       : todayNoon; // today 12PM
 
     function updateCountdown() {
