@@ -115,7 +115,7 @@
 
     let deadline = (now > todayNoon)
       ? new Date(todayNoon.getTime() + 24 * 60 * 60 * 1000) // tomorrow 12am
-      : todayNoon; // today 12PM
+      : todayNoon; // today 12am
 
     function updateCountdown() {
       const now = new Date();
