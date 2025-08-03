@@ -105,34 +105,34 @@
   </div>
 
   <!-- Countdown Timer Script -->
-  <script>
+<script>
+  const now = new Date();
+
+  // Set deadline to today at 11:59:59 PM (midnight)
+  const todayMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0); 
+
+  const deadline = todayMidnight;
+
+  function updateCountdown() {
     const now = new Date();
-    const todayNoon = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 0, 0);
+    const diff = deadline - now;
 
-    let deadline = (now > todayNoon)
-      ? new Date(todayNoon.getTime() + 24 * 60 * 60 * 1000) // tomorrow 12am
-      : todayNoon; // today 12am
+    if (diff > 0) {
+      const hrs = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const mins = Math.floor((diff / (1000 * 60)) % 60);
+      const secs = Math.floor((diff / 1000) % 60);
 
-    function updateCountdown() {
-      const now = new Date();
-      const diff = deadline - now;
-
-      if (diff > 0) {
-        const hrs = Math.floor((diff / (1000 * 60 * 60)) % 24);
-        const mins = Math.floor((diff / (1000 * 60)) % 60);
-        const secs = Math.floor((diff / 1000) % 60);
-
-        document.getElementById("countdown").innerText =
-          `${hrs} hrs ${mins} mins ${secs} secs`;
-      } else {
-        document.getElementById("countdown").innerText = "⛔ Offer Closed!";
-        clearInterval(timer);
-      }
+      document.getElementById("countdown").innerText =
+        `${hrs} hrs ${mins} mins ${secs} secs`;
+    } else {
+      document.getElementById("countdown").innerText = "⛔ Offer Closed!";
+      clearInterval(timer);
     }
+  }
 
-    updateCountdown();
-    const timer = setInterval(updateCountdown, 1000);
-  </script>
+  updateCountdown();
+  const timer = setInterval(updateCountdown, 1000);
+</script>
 
 </body>
 </html>
